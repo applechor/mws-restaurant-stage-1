@@ -169,7 +169,7 @@ createRestaurantHTML = (restaurant) => {
     image.alt = DBHelper.imageAltForRestaurant(restaurant);
     li.append(image);
 
-    const name = document.createElement('h1');
+    const name = document.createElement('h3');
     name.innerHTML = restaurant.name;
     // add ID attribute for name
     const restaurantID = 'restaurant-' + restaurant.id;
